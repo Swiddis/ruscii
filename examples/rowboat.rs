@@ -14,7 +14,7 @@ fn main() {
         AnimationFrame::new(include_str!("rowboat_frames/2.txt"), Vec2::zero(), 10),
     ];
     let mut animator = Animator::new(animation);
-    
+
     app.run(|app_state: &mut State, window: &mut Window| {
         for key_event in app_state.keyboard().last_key_events() {
             match key_event {

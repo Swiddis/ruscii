@@ -159,7 +159,7 @@ pub struct Pencil<'a> {
 
 impl<'a> Pencil<'a> {
     /// Constructs a [`Pencil`] that can write to the given [`Canvas`].
-    pub fn new(canvas: &'a mut Canvas) -> Pencil {
+    pub fn new(canvas: &'a mut Canvas) -> Pencil<'a> {
         Pencil {
             origin: Vec2::zero(),
             foreground: canvas.default_element().foreground,
